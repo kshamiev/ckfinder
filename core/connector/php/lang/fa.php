@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Persian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'پسوند فایل نامعتبر  است.',
 		'109' => 'درخواست نامعتبر است.',
 		'110' => 'خطای ناشناخته.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'فایل یا پوشه ای با این نام وجود دارد',
 		'116' => 'پوشه یافت نشد. لطفا بروزرسانی کرده و مجددا تلاش کنید.',
 		'117' => 'فایل یافت نشد. لطفا فهرست فایلها را بروزرسانی کرده و مجددا تلاش کنید.',

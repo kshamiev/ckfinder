@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Norwegian Bokmål language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Ugyldig filtype.',
 		'109' => 'Ugyldig forespørsel.',
 		'110' => 'Ukjent feil.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Det finnes allerede en fil eller mappe med dette navnet.',
 		'116' => 'Kunne ikke finne mappen. Oppdater vinduet og prøv igjen.',
 		'117' => 'Kunne ikke finne filen. Oppdater vinduet og prøv igjen.',

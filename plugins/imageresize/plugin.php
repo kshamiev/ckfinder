@@ -2,8 +2,8 @@
 /*
 * CKFinder
 * ========
-* http://ckfinder.com
-* Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+* http://cksource.com/ckfinder
+* Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
 *
 * The software, this file and its contents are subject to the CKFinder
 * License. Please read the license.txt file before using, installing, copying,
@@ -151,8 +151,7 @@ class CKFinder_Connector_CommandHandler_ImageResize extends CKFinder_Connector_C
     function onInitCommand( &$connectorNode )
     {
         // "@" protects against E_STRICT (Only variables should be assigned by reference)
-//        @$pluginsInfo = &$connectorNode->getChild("PluginsInfo");
-        $pluginsInfo = $connectorNode->getChild("PluginsInfo");
+        @$pluginsInfo = &$connectorNode->getChild("PluginsInfo");
         $imageresize = new CKFinder_Connector_Utils_XmlNode("imageresize");
         $pluginsInfo->addChild($imageresize);
         $config = $this->getConfig();

@@ -2,8 +2,8 @@
 <!--
  * CKFinder
  * ========
- * http://ckfinder.com
- * Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+ * http://cksource.com/ckfinder
+ * Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
  *
  * The software, this file and its contents are subject to the CKFinder
  * License. Please read the license.txt file before using, installing, copying,
@@ -28,7 +28,7 @@
 <?php
 
 include_once '../../../fckeditor/fckeditor.php' ;
-require_once '../../ckfinder.php';
+require_once '../../ckfinder.php' ;
 
 // This is a check for the FCKeditor class. If not defined, the paths must be checked.
 if ( !class_exists( 'FCKeditor' ) )
@@ -59,10 +59,10 @@ else
 	<div id="footer">
 		<hr />
 		<p>
-			CKFinder - Ajax File Manager - <a class="samples" href="http://ckfinder.com/">http://ckfinder.com</a>
+			CKFinder - Ajax File Manager - <a class="samples" href="http://cksource.com/ckfinder/">http://cksource.com/ckfinder</a>
 		</p>
 		<p id="copy">
-			Copyright &copy; 2003-2012, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico Knabben. All rights reserved.
+			Copyright &copy; 2007-2015, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico Knabben. All rights reserved.
 		</p>
 	</div>
 </body>

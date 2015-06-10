@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Hindi language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'फाएल एक्स्त्न्सं गलत है.',
 		'109' => 'इन्वेलीड रिक्वेस्ट.',
 		'110' => 'अननोन एरर.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'सेम नाम का फाएल या फोल्डर मोजूद है.',
 		'116' => 'फोल्डर नही मिला. रिफ्रेस करके वापिस प्रयत्न करे.',
 		'117' => 'फाएल नही मिला. फाएल लिस्टको रिफ्रेस करके वापिस प्रयत्न करे.',

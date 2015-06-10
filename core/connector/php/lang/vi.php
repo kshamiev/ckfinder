@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Vietnamese language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Phần mở rộng tập tin không hợp lệ.',
 		'109' => 'Yêu cầu không hợp lệ.',
 		'110' => 'Lỗi không xác định.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Tập tin hoặc thư mục cùng tên đã tồn tại.',
 		'116' => 'Không thấy thư mục. Hãy làm tươi và thử lại.',
 		'117' => 'Không thấy tập tin. Hãy làm tươi và thử lại.',

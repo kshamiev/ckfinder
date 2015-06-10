@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Latvian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Neatļauts faila paplašinājums.',
 		'109' => 'Nederīgs pieprasījums.',
 		'110' => 'Nezināma kļūda.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Fails vai mape ar šādu nosaukumu jau pastāv.',
 		'116' => 'Mape nav atrasta. Lūdzu pārlādējiet šo logu un mēģiniet vēlreiz.',
 		'117' => 'Fails nav atrasts. Lūdzu pārlādējiet failu sarakstu un mēģiniet vēlreiz.',

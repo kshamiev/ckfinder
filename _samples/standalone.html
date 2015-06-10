@@ -2,8 +2,8 @@
 <!--
  * CKFinder
  * ========
- * http://ckfinder.com
- * Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+ * http://cksource.com/ckfinder
+ * Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
  *
  * The software, this file and its contents are subject to the CKFinder
  * License. Please read the license.txt file before using, installing, copying,
@@ -30,9 +30,9 @@
 		<script type="text/javascript">
 
 			// This is a sample function which is called when a file is selected in CKFinder.
-			function showFileInfo( fileUrl, data )
+			function showFileInfo( fileUrl, data, allFiles )
 			{
-				var msg = 'The selected URL is: <a href="' + fileUrl + '">' + fileUrl + '</a><br /><br />';
+				var msg = 'The last selected file is: <a href="' + fileUrl + '">' + fileUrl + '</a><br /><br />';
 				// Display additional information available in the "data" object.
 				// For example, the size of a file (in KB) is available in the data["fileSize"] variable.
 				if ( fileUrl != data['fileUrl'] )
@@ -40,6 +40,17 @@
 				msg += '<b>File size:</b> ' + data['fileSize'] + 'KB<br />';
 				msg += '<b>Last modified:</b> ' + data['fileDate'];
 
+				if ( allFiles.length > 1 )
+				{
+					msg += '<br /><br /><b>Selected files:</b><br /><br />';
+					msg += '<ul style="padding-left:20px">';
+					for ( var i = 0 ; i < allFiles.length ; i++ )
+					{
+						// See also allFiles[i].url
+						msg += '<li>' + allFiles[i].data['fileUrl'] + ' (' + allFiles[i].data['fileSize'] + 'KB)</li>';
+					}
+					msg += '</ul>';
+				}
 				// this = CKFinderAPI object
 				this.openMsgDialog( "Selected file", msg );
 			}
@@ -66,10 +77,10 @@
 	<div id="footer">
 		<hr />
 		<p>
-			CKFinder - Ajax File Manager - <a class="samples" href="http://ckfinder.com/">http://ckfinder.com</a>
+			CKFinder - Ajax File Manager - <a class="samples" href="http://cksource.com/ckfinder/">http://cksource.com/ckfinder</a>
 		</p>
 		<p id="copy">
-			Copyright &copy; 2003-2012, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico Knabben. All rights reserved.
+			Copyright &copy; 2007-2015, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico Knabben. All rights reserved.
 		</p>
 	</div>
 </body>

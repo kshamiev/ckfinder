@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the English language. This is the base file for all translations.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Invalid file extension.',
 		'109' => 'Invalid request.',
 		'110' => 'Unknown error.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'A file or folder with the same name already exists.',
 		'116' => 'Folder not found. Please refresh and try again.',
 		'117' => 'File not found. Please refresh the files list and try again.',

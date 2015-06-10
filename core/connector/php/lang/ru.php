@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Russian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Неверное расширение файла.',
 		'109' => 'Неверный запрос.',
 		'110' => 'Неизвестная ошибка.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Файл или папка с таким именем уже существует.',
 		'116' => 'Папка не найдена. Пожалуйста, обновите вид папок и попробуйте еще раз.',
 		'117' => 'Файл не найден. Пожалуйста, обновите список файлов и попробуйте еще раз.',

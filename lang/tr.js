@@ -1,8 +1,8 @@
 ﻿/*
  * CKFinder
  * ========
- * http://ckfinder.com
- * Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+ * http://cksource.com/ckfinder
+ * Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
  *
  * The software, this file, and its contents are subject to the CKFinder
  * License. Please read the license.txt file before using, installing, copying,
@@ -16,6 +16,7 @@
  *		language.
  *
  *	Turkish translation by Abdullah M CEYLAN a.k.a. Kenan Balamir. Updated.
+ * 	Günce BEKTAŞ update tr.js file and translate help folder.
  */
 
 /**
@@ -77,16 +78,18 @@ CKFinder.lang['tr'] =
 	FolderDelete	: '"%1" klasörünü silmek istediğinizden emin misiniz?',
 	FolderRenaming	: ' (Yeniden adlandırılıyor...)',
 	FolderDeleting	: ' (Siliniyor...)',
+	DestinationFolder	: 'Hedef Klasör',
 
 	// Files
 	FileRename		: 'Lütfen yeni dosyanın adını yazın: ',
 	FileRenameExt	: 'Dosya uzantısını değiştirmek istiyor musunuz? Bu, dosyayı kullanılamaz hale getirebilir.',
 	FileRenaming	: 'Yeniden adlandırılıyor...',
 	FileDelete		: '"%1" dosyasını silmek istediğinizden emin misiniz?',
+	FilesDelete	: '%1 adet dosyayı silmek istediğinize emin misiniz?',
 	FilesLoading	: 'Yükleniyor...',
 	FilesEmpty		: 'Klasör boş',
-	FilesMoved		: '%1 dosyası, %2:%3 içerisine taşındı',
-	FilesCopied		: '%1 dosyası, %2:%3 içerisine kopyalandı',
+	DestinationFile	: 'Hedef Dosya',
+	SkippedFiles	: 'Atlanan dosyaların listesi:',
 
 	// Basket
 	BasketFolder		: 'Sepet',
@@ -95,13 +98,21 @@ CKFinder.lang['tr'] =
 	BasketOpenFolder	: 'Üst klasörü aç',
 	BasketTruncateConfirm : 'Sepetteki tüm dosyaları silmek istediğinizden emin misiniz?',
 	BasketRemoveConfirm	: 'Sepetteki %1% dosyasını silmek istediğinizden emin misiniz?',
+	BasketRemoveConfirmMultiple	: '%1 adet dosyayı sepetinizden çıkartmak istediğinize emin misiniz?',
 	BasketEmpty			: 'Sepette hiç dosya yok, birkaç tane sürükleyip bırakabilirsiniz',
 	BasketCopyFilesHere	: 'Sepetten Dosya Kopyala',
 	BasketMoveFilesHere	: 'Sepetten Dosya Taşı',
 
-	BasketPasteErrorOther	: '%s Dosya Hatası: %e',
-	BasketPasteMoveSuccess	: 'Taşınan dosya: %s',
-	BasketPasteCopySuccess	: 'Kopyalanan dosya: %s',
+	// Global messages
+	OperationCompletedSuccess	: 'İşlem başarıyla tamamlandı.',
+	OperationCompletedErrors		: 'İşlem hatalar olmasına karşın tamamlandı.',
+	FileError				: '%s: %e',
+
+	// Move and Copy files
+	MovedFilesNumber		: 'Taşınan dosya sayısı: %s.',
+	CopiedFilesNumber	: 'Kopyalanan dosya sayısı: %s.',
+	MoveFailedList		: 'Taşınamayan dosyalar:<br />%s',
+	CopyFailedList		: 'Koplanamayan dosyalar:<br />%s',
 
 	// Toolbar Buttons (some used elsewhere)
 	Upload		: 'Yükle',
@@ -120,9 +131,10 @@ CKFinder.lang['tr'] =
 	NewSubFolder	: 'Yeni Altklasör',
 	Rename			: 'Yeniden Adlandır',
 	Delete			: 'Sil',
+	DeleteFiles		: 'Dosyaları sil',
 
-	CopyDragDrop	: 'Dosyayı buraya kopyala',
-	MoveDragDrop	: 'Dosyayı buraya taşı',
+	CopyDragDrop	: 'Buraya kopyala',
+	MoveDragDrop	: 'Buraya taşı',
 
 	// Dialogs
 	RenameDlgTitle		: 'Yeniden Adlandır',
@@ -132,6 +144,7 @@ CKFinder.lang['tr'] =
 
 	FileOverwrite	: 'Üzerine yaz',
 	FileAutorename	: 'Oto-Yeniden Adlandır',
+	ManuallyRename	: 'Elle isimlendir',
 
 	// Generic
 	OkBtn		: 'Tamam',
@@ -185,8 +198,10 @@ CKFinder.lang['tr'] =
 	FilesCountMany	: '%1 dosya',
 
 	// Size and Speed
-	Kb				: '%1 kB',
-	KbPerSecond		: '%1 kB/s',
+	Kb				: '%1 KB',
+	Mb				: '%1 MB',
+	Gb				: '%1 GB',
+	SizePerSecond	: '%1/sn',
 
 	// Connector Error Messages.
 	ErrorUnknown	: 'İsteğinizi yerine getirmek mümkün değil. (Hata %1)',
@@ -201,6 +216,7 @@ CKFinder.lang['tr'] =
 	105 : 'Geçersiz dosya uzantısı.',
 	109 : 'Geçersiz istek.',
 	110 : 'Bilinmeyen hata.',
+	111 : 'Dosya boyutundan dolayı bu işlemin yapılması mümkün değil.',
 	115 : 'Aynı isimde bir dosya ya da klasör zaten var.',
 	116 : 'Klasör bulunamadı. Lütfen yenileyin ve tekrar deneyin.',
 	117 : 'Dosya bulunamadı. Lütfen dosya listesini yenileyin ve tekrar deneyin.',
@@ -224,6 +240,8 @@ CKFinder.lang['tr'] =
 		FileEmpty		: 'Dosya adı boş olamaz',
 		FileExists		: '%s dosyası zaten var',
 		FolderEmpty		: 'Klasör adı boş olamaz',
+		FolderExists	: '%s klasörü zaten mevcut.',
+		FolderNameExists	: 'Klasör zaten mevcut.',
 
 		FileInvChar		: 'Dosya adının içermesi mümkün olmayan karakterler: \n\\ / : * ? " < > |',
 		FolderInvChar	: 'Klasör adının içermesi mümkün olmayan karakterler: \n\\ / : * ? " < > |',
@@ -272,5 +290,26 @@ CKFinder.lang['tr'] =
 	{
 		maximize : 'Büyült',
 		minimize : 'Küçült'
+	},
+
+	Gallery :
+	{
+		current : '{current} / {total} resim'
+	},
+
+	Zip :
+	{
+		extractHereLabel	: 'Buraya aç',
+		extractToLabel		: 'Hedefe aç...',
+		downloadZipLabel	: 'Zip olarak indir',
+		compressZipLabel	: 'Zip dosyası olarak sıkıştır',
+		removeAndExtract	: 'Varolanı kaldır ve aç',
+		extractAndOverwrite	: 'Mevcut dosyaların üzerine yazarak aç',
+		extractSuccess		: 'Başarıyla açıldı.'
+	},
+
+	Search :
+	{
+		searchPlaceholder : 'Ara'
 	}
 };

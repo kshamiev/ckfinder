@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Lithuanian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Netinkamas failo plėtinys.',
 		'109' => 'Netinkama užklausa.',
 		'110' => 'Nežinoma klaida.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Failas arba segtuvas su tuo pačiu pavadinimu jau yra.',
 		'116' => 'Segtuvas nerastas. Pabandykite atnaujinti.',
 		'117' => 'Failas nerastas. Pabandykite atnaujinti failų sąrašą.',

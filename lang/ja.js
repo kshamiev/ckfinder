@@ -1,8 +1,8 @@
 ﻿/*
  * CKFinder
  * ========
- * http://ckfinder.com
- * Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+ * http://cksource.com/ckfinder
+ * Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
  *
  * The software, this file, and its contents are subject to the CKFinder
  * License. Please read the license.txt file before using, installing, copying,
@@ -30,7 +30,7 @@ CKFinder.lang['ja'] =
 		// Put the voice-only part of the label in the span.
 		unavailable		: '%1<span class="cke_accessibility">, は利用できません。</span>',
 		confirmCancel	: '変更された項目があります。ウィンドウを閉じてもいいですか？',
-		ok				: '適用',
+		ok				: 'OK',
 		cancel			: 'キャンセル',
 		confirmationTitle	: '確認',
 		messageTitle	: 'インフォメーション',
@@ -40,7 +40,7 @@ CKFinder.lang['ja'] =
 		skip			: 'スキップ',
 		skipAll			: 'すべてスキップ',
 		makeDecision	: 'どうしますか？',
-		rememberDecision: '注意：'
+		rememberDecision: '全てに適用する'
 	},
 
 
@@ -68,23 +68,25 @@ CKFinder.lang['ja'] =
 	DateAmPm : ['AM', 'PM'],
 
 	// Folders
-	FoldersTitle	: 'Folders',
+	FoldersTitle	: 'フォルダ',
 	FolderLoading	: '読み込み中...',
 	FolderNew		: '新しいフォルダ名を入力してください: ',
 	FolderRename	: '新しいフォルダ名を入力してください: ',
 	FolderDelete	: '本当にフォルダ「"%1"」を削除してもよろしいですか？',
 	FolderRenaming	: ' (リネーム中...)',
 	FolderDeleting	: ' (削除中...)',
+	DestinationFolder	: '適用するフォルダ',
 
 	// Files
 	FileRename		: '新しいファイル名を入力してください: ',
 	FileRenameExt	: 'ファイルが使えなくなる可能性がありますが、本当に拡張子を変更してもよろしいですか？',
 	FileRenaming	: 'リネーム中...',
 	FileDelete		: '本当に「"%1"」を削除してもよろしいですか？',
+	FilesDelete	: 'これらの %1 つのファイルを削除してもよろしいですか？ ',
 	FilesLoading	: '読み込み中...',
 	FilesEmpty		: 'ファイルがありません',
-	FilesMoved		: ' %1 は %2:%3 に移動されました',
-	FilesCopied		: ' %1 cは %2:%3 にコピーされました',
+	DestinationFile	: '適用するファイル',
+	SkippedFiles	: 'スキップしたファイルのリスト:',
 
 	// Basket
 	BasketFolder		: 'Basket',
@@ -93,13 +95,21 @@ CKFinder.lang['ja'] =
 	BasketOpenFolder	: '親フォルダを開く',
 	BasketTruncateConfirm : '本当にバスケットの中身を空にしますか？',
 	BasketRemoveConfirm	: '本当に「"%1"」をバスケットから削除しますか？',
+	BasketRemoveConfirmMultiple	: 'Do you really want to remove %1 files from the basket?', // MISSING
 	BasketEmpty			: 'バスケットの中にファイルがありません。このエリアにドラッグ＆ドロップして追加することができます。',
 	BasketCopyFilesHere	: 'バスケットからファイルをコピー',
 	BasketMoveFilesHere	: 'バスケットからファイルを移動',
 
-	BasketPasteErrorOther	: 'ファイル %s のエラー： %e',
-	BasketPasteMoveSuccess	: '以下のファイルが移動されました: %s',
-	BasketPasteCopySuccess	: '以下のファイルがコピーされました: %s',
+	// Global messages
+	OperationCompletedSuccess	: 'Operation completed successfully.', // MISSING
+	OperationCompletedErrors		: 'Operation completed with errors.', // MISSING
+	FileError				: '%s: %e', // MISSING
+
+	// Move and Copy files
+	MovedFilesNumber		: 'Number of files moved: %s.', // MISSING
+	CopiedFilesNumber	: 'Number of files copied: %s.', // MISSING
+	MoveFailedList		: 'The following files could not be moved:<br />%s', // MISSING
+	CopyFailedList		: 'The following files could not be copied:<br />%s', // MISSING
 
 	// Toolbar Buttons (some used elsewhere)
 	Upload		: 'アップロード',
@@ -118,6 +128,7 @@ CKFinder.lang['ja'] =
 	NewSubFolder	: '新しいフォルダに入れる',
 	Rename			: 'ファイル名の変更',
 	Delete			: '削除',
+	DeleteFiles		: 'ファイルを削除する',
 
 	CopyDragDrop	: 'コピーするファイルをここにドロップしてください',
 	MoveDragDrop	: '移動するファイルをここにドロップしてください',
@@ -129,7 +140,8 @@ CKFinder.lang['ja'] =
 	SysErrorDlgTitle : 'システムエラー',
 
 	FileOverwrite	: '上書き',
-	FileAutorename	: 'A自動でリネーム',
+	FileAutorename	: '自動でリネーム',
+	ManuallyRename	: '手動でリネーム',
 
 	// Generic
 	OkBtn		: 'OK',
@@ -150,17 +162,17 @@ CKFinder.lang['ja'] =
 	UploadExtIncorrect	: '選択されたファイルの拡張子は許可されていません。',
 
 	// Flash Uploads
-	UploadLabel			: 'Files to Upload', // MISSING
-	UploadTotalFiles	: 'Total Files:', // MISSING
-	UploadTotalSize		: 'Total Size:', // MISSING
+	UploadLabel			: 'アップロード',
+	UploadTotalFiles	: 'アップロードしたファイル数:',
+	UploadTotalSize		: 'ファイルサイズ:',
 	UploadSend			: 'アップロード',
-	UploadAddFiles		: 'Add Files', // MISSING
-	UploadClearFiles	: 'Clear Files', // MISSING
-	UploadCancel		: 'Cancel Upload', // MISSING
-	UploadRemove		: 'Remove', // MISSING
-	UploadRemoveTip		: 'Remove !f', // MISSING
-	UploadUploaded		: 'Uploaded !n%', // MISSING
-	UploadProcessing	: 'Processing...', // MISSING
+	UploadAddFiles		: 'ファイルを追加',
+	UploadClearFiles	: 'クリア',
+	UploadCancel		: 'キャンセル',
+	UploadRemove		: '削除',
+	UploadRemoveTip		: '!fを削除しました',
+	UploadUploaded		: '!n%をアップロードしました',
+	UploadProcessing	: 'アップロード中...',
 
 	// Settings Panel
 	SetTitle		: '表示のカスタマイズ',
@@ -175,7 +187,7 @@ CKFinder.lang['ja'] =
 	SetSortName		: 'ファイル名',
 	SetSortDate		: '日付',
 	SetSortSize		: 'サイズ',
-	SetSortExtension		: 'by Extension', // MISSING
+	SetSortExtension		: '拡張子',
 
 	// Status Bar
 	FilesCountEmpty : '<フォルダ内にファイルがありません>',
@@ -183,8 +195,10 @@ CKFinder.lang['ja'] =
 	FilesCountMany	: '%1個のファイル',
 
 	// Size and Speed
-	Kb				: '%1 kB',
-	KbPerSecond		: '%1 kB/s',
+	Kb				: '%1 KB',
+	Mb				: '%1 MB', // MISSING
+	Gb				: '%1 GB', // MISSING
+	SizePerSecond	: '%1/s', // MISSING
 
 	// Connector Error Messages.
 	ErrorUnknown	: 'リクエストの処理に失敗しました。 (Error %1)',
@@ -199,6 +213,7 @@ CKFinder.lang['ja'] =
 	105 : '拡張子が正しくありません。',
 	109 : '不正なリクエストです。',
 	110 : '不明なエラーが発生しました。',
+	111 : 'It was not possible to complete the request due to resulting file size.', // MISSING
 	115 : '同じ名前のファイル/フォルダがすでに存在しています。',
 	116 : 'フォルダが見つかりませんでした。ページを更新して再度お試し下さい。',
 	117 : 'ファイルが見つかりませんでした。ページを更新して再度お試し下さい。',
@@ -221,7 +236,9 @@ CKFinder.lang['ja'] =
 	{
 		FileEmpty		: 'ファイル名を入力してください',
 		FileExists		: ' %s はすでに存在しています。別の名前を入力してください。',
-		FolderEmpty		: 'フォルダ名を入力してください',
+		FolderEmpty		: 'フォルダ名を入力してください。',
+		FolderExists	: 'フォルダ %s は既に存在しています。',
+		FolderNameExists	: 'フォルダは既に存在しています。',
 
 		FileInvChar		: 'ファイルに以下の文字は使えません: \n\\ / : * ? " < > |',
 		FolderInvChar	: 'フォルダに以下の文字は使えません: \n\\ / : * ? " < > |',
@@ -270,5 +287,26 @@ CKFinder.lang['ja'] =
 	{
 		maximize : '最大化',
 		minimize : '最小化'
+	},
+
+	Gallery :
+	{
+		current : 'Image {current} of {total}' // MISSING
+	},
+
+	Zip :
+	{
+		extractHereLabel	: 'ここに解凍する',
+		extractToLabel		: 'フォルダを指定して解凍する',
+		downloadZipLabel	: 'zipファイルでダウンロード',
+		compressZipLabel	: 'zipファイルにする',
+		removeAndExtract	: '既存のファイルを削除して解凍しました。',
+		extractAndOverwrite	: '解凍して既存のファイルに上書きしました。',
+		extractSuccess		: '解凍が完了しました。'
+	},
+
+	Search :
+	{
+		searchPlaceholder : '検索'
 	}
 };

@@ -1,8 +1,8 @@
 ﻿/*
  * CKFinder
  * ========
- * http://ckfinder.com
- * Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+ * http://cksource.com/ckfinder
+ * Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
  *
  * The software, this file, and its contents are subject to the CKFinder
  * License. Please read the license.txt file before using, installing, copying,
@@ -29,7 +29,7 @@ CKFinder.lang['fr'] =
 	{
 		// Put the voice-only part of the label in the span.
 		unavailable		: '%1<span class="cke_accessibility">, Inaccessible</span>',
-		confirmCancel	: 'Certaines options ont été modifiées. Êtes vous sûr de vouloir fermer cette fenêtre?',
+		confirmCancel	: 'Certaines options ont été modifiées. Êtes-vous sûr de vouloir fermer cette fenêtre ?',
 		ok				: 'OK',
 		cancel			: 'Annuler',
 		confirmationTitle	: 'Confirmation',
@@ -39,7 +39,7 @@ CKFinder.lang['fr'] =
 		redo			: 'Rétablir',
 		skip			: 'Passer',
 		skipAll			: 'Passer tout',
-		makeDecision	: 'Quelle action choisir?',
+		makeDecision	: 'Quelle action choisir ?',
 		rememberDecision: 'Se rappeler de la décision'
 	},
 
@@ -75,31 +75,41 @@ CKFinder.lang['fr'] =
 	FolderDelete	: 'Êtes-vous sûr de vouloir effacer le dossier "%1"?',
 	FolderRenaming	: ' (Renommage en cours...)',
 	FolderDeleting	: ' (Suppression en cours...)',
+	DestinationFolder	: 'Dossier de destination',
 
 	// Files
 	FileRename		: 'Entrez le nouveau nom du fichier: ',
 	FileRenameExt	: 'Êtes-vous sûr de vouloir changer l\'extension de ce fichier? Le fichier pourrait devenir inutilisable.',
 	FileRenaming	: 'Renommage en cours...',
 	FileDelete		: 'Êtes-vous sûr de vouloir effacer le fichier "%1"?',
+	FilesDelete	: 'Êtes-vous sûr de vouloir supprimer %1 fichiers ?',
 	FilesLoading	: 'Chargement...',
 	FilesEmpty		: 'Répertoire vide',
-	FilesMoved		: 'Fichier %1 déplacé vers %2:%3.',
-	FilesCopied		: 'Fichier %1 copié vers %2:%3.',
+	DestinationFile	: 'Fichier de destination',
+	SkippedFiles	: 'Liste des fichiers ignorés : ',
 
 	// Basket
 	BasketFolder		: 'Corbeille',
 	BasketClear			: 'Vider la corbeille',
 	BasketRemove		: 'Retirer de la corbeille',
 	BasketOpenFolder	: 'Ouvrir le répertiore parent',
-	BasketTruncateConfirm : 'Êtes vous sûr de vouloir supprimer tous les fichiers de la corbeille?',
-	BasketRemoveConfirm	: 'Êtes vous sûr de vouloir supprimer le fichier "%1" de la corbeille?',
+	BasketTruncateConfirm : 'Êtes-vous sûr de vouloir supprimer tous les fichiers de la corbeille ?',
+	BasketRemoveConfirm	: 'Êtes-vous sûr de vouloir supprimer le fichier "%1" de la corbeille ?',
+	BasketRemoveConfirmMultiple	: 'Êtes-vous sûr de vouloir supprimer %1 fichiers de la corbeille ?',
 	BasketEmpty			: 'Aucun fichier dans la corbeille, déposez en queques uns.',
 	BasketCopyFilesHere	: 'Copier des fichiers depuis la corbeille',
 	BasketMoveFilesHere	: 'Déplacer des fichiers depuis la corbeille',
 
-	BasketPasteErrorOther	: 'Fichier %s erreur: %e.',
-	BasketPasteMoveSuccess	: 'Les fichiers suivant ont été déplacés: %s',
-	BasketPasteCopySuccess	: 'Les fichiers suivant ont été copiés: %s',
+	// Global messages
+	OperationCompletedSuccess	: 'Operation terminée avec succès.',
+	OperationCompletedErrors		: 'Operation terminée avec des erreurs.',
+	FileError				: '%s: %e',
+
+	// Move and Copy files
+	MovedFilesNumber		: 'Nombre de fichiers déplacés : %s.',
+	CopiedFilesNumber	: 'Nombre de fichiers copiés : %s.',
+	MoveFailedList		: 'Les fichiers suivants ne peuvent être déplacés :<br />%s',
+	CopyFailedList		: 'Les fichiers suivants ne peuvent être copiés :<br />%s',
 
 	// Toolbar Buttons (some used elsewhere)
 	Upload		: 'Envoyer',
@@ -118,9 +128,10 @@ CKFinder.lang['fr'] =
 	NewSubFolder	: 'Nouveau sous-dossier',
 	Rename			: 'Renommer',
 	Delete			: 'Effacer',
+	DeleteFiles		: 'Supprimer les fichiers',
 
-	CopyDragDrop	: 'Copier les fichiers ici',
-	MoveDragDrop	: 'Déplacer les fichiers ici',
+	CopyDragDrop	: 'Copier ici',
+	MoveDragDrop	: 'Déplacer ici',
 
 	// Dialogs
 	RenameDlgTitle		: 'Renommer',
@@ -130,6 +141,7 @@ CKFinder.lang['fr'] =
 
 	FileOverwrite	: 'Ré-écrire',
 	FileAutorename	: 'Re-nommage automatique',
+	ManuallyRename	: 'Renommage manuel',
 
 	// Generic
 	OkBtn		: 'OK',
@@ -151,8 +163,8 @@ CKFinder.lang['fr'] =
 
 	// Flash Uploads
 	UploadLabel			: 'Fichier à envoyer',
-	UploadTotalFiles	: 'Nombre de fichiers:',
-	UploadTotalSize		: 'Poids total:',
+	UploadTotalFiles	: 'Nombre de fichiers :',
+	UploadTotalSize		: 'Poids total :',
 	UploadSend			: 'Envoyer',
 	UploadAddFiles		: 'Ajouter des fichiers',
 	UploadClearFiles	: 'Supprimer les fichiers',
@@ -164,14 +176,14 @@ CKFinder.lang['fr'] =
 
 	// Settings Panel
 	SetTitle		: 'Configuration',
-	SetView			: 'Voir:',
+	SetView			: 'Voir :',
 	SetViewThumb	: 'Miniatures',
 	SetViewList		: 'Liste',
-	SetDisplay		: 'Affichage:',
+	SetDisplay		: 'Affichage :',
 	SetDisplayName	: 'Nom du fichier',
 	SetDisplayDate	: 'Date',
 	SetDisplaySize	: 'Taille du fichier',
-	SetSort			: 'Classement:',
+	SetSort			: 'Classement :',
 	SetSortName		: 'par nom de fichier',
 	SetSortDate		: 'par date',
 	SetSortSize		: 'par taille',
@@ -183,8 +195,10 @@ CKFinder.lang['fr'] =
 	FilesCountMany	: '%1 fichiers',
 
 	// Size and Speed
-	Kb				: '%1 ko',
-	KbPerSecond		: '%1 ko/s',
+	Kb				: '%1 Ko',
+	Mb				: '%1 Mo',
+	Gb				: '%1 Go',
+	SizePerSecond	: '%1/s',
 
 	// Connector Error Messages.
 	ErrorUnknown	: 'La demande n\'a pas abouti. (Erreur %1)',
@@ -199,6 +213,7 @@ CKFinder.lang['fr'] =
 	105 : 'Extension de fichier invalide.',
 	109 : 'Demande invalide.',
 	110 : 'Erreur inconnue.',
+	111 : 'It was not possible to complete the request due to resulting file size.', // MISSING
 	115 : 'Un fichier ou un dossier avec ce nom existe déjà.',
 	116 : 'Ce dossier n\'existe pas. Veuillez rafraîchir la page et réessayer.',
 	117 : 'Ce fichier n\'existe pas. Veuillez rafraîchir la page et réessayer.',
@@ -222,6 +237,8 @@ CKFinder.lang['fr'] =
 		FileEmpty		: 'Le nom du fichier ne peut être vide.',
 		FileExists		: 'Le fichier %s existes déjà.',
 		FolderEmpty		: 'Le nom du dossier ne peut être vide.',
+		FolderExists	: 'Le dossier %s existe déjà.',
+		FolderNameExists	: 'Le dossier existe déjà.',
 
 		FileInvChar		: 'Le nom du fichier ne peut pas contenir les charactères suivants : \n\\ / : * ? " < > |',
 		FolderInvChar	: 'Le nom du dossier ne peut pas contenir les charactères suivants : \n\\ / : * ? " < > |',
@@ -229,7 +246,7 @@ CKFinder.lang['fr'] =
 		PopupBlockView	: 'Il n\'a pas été possible d\'ouvrir la nouvelle fenêtre. Désactiver votre bloqueur de fenêtres pour ce site.',
 		XmlError		: 'Impossible de charger correctement la réponse XML du serveur web.',
 		XmlEmpty		: 'Impossible de charger la réponse XML du serveur web. Le serveur a renvoyé une réponse vide.',
-		XmlRawResponse	: 'Réponse du serveur: %s'
+		XmlRawResponse	: 'Réponse du serveur : %s'
 	},
 
 	// Imageresize plugin
@@ -237,7 +254,7 @@ CKFinder.lang['fr'] =
 	{
 		dialogTitle		: 'Redimensionner %s',
 		sizeTooBig		: 'Impossible de modifier la hauteur ou la largeur de cette image pour une valeur plus grande que l\'original (%size).',
-		resizeSuccess	: 'L\'image a été redimensionné avec succès.',
+		resizeSuccess	: 'L\'image a été redimensionnée avec succès.',
 		thumbnailNew	: 'Créer une nouvelle vignette',
 		thumbnailSmall	: 'Petit (%s)',
 		thumbnailMedium	: 'Moyen (%s)',
@@ -270,5 +287,26 @@ CKFinder.lang['fr'] =
 	{
 		maximize : 'Agrandir',
 		minimize : 'Minimiser'
+	},
+
+	Gallery :
+	{
+		current : 'Image {current} sur {total}'
+	},
+
+	Zip :
+	{
+		extractHereLabel	: 'Décompresser ici',
+		extractToLabel		: 'Décompresser vers...',
+		downloadZipLabel	: 'Zipper et télécharger',
+		compressZipLabel	: 'Zipper',
+		removeAndExtract	: 'Supprimer les fichiers existants et décompresser',
+		extractAndOverwrite	: 'Décompresser et remplacer les fichier existants',
+		extractSuccess		: 'Les fichiers ont été décompressés avec succès.'
+	},
+
+	Search :
+	{
+		searchPlaceholder : 'Rechercher'
 	}
 };

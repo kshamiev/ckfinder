@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Esperanto language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Nevalida dosiernoma finaĵo.',
 		'109' => 'Nevalida peto.',
 		'110' => 'Nekonata eraro.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Dosiero aŭ dosierujo kun tiu nomo jam ekzistas.',
 		'116' => 'Tiu dosierujo ne ekzistas. Bonvolu aktualigi kaj reprovi.',
 		'117' => 'Tiu dosiero ne ekzistas. Bonvolu aktualigi kaj reprovi.',

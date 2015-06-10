@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Latin American Spanish language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'La extensión del archivo no es válida.',
 		'109' => 'Petición inválida.',
 		'110' => 'Error desconocido.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Ya existe un archivo o carpeta con ese nombre.',
 		'116' => 'No se ha encontrado la carpeta. Por favor, actualice y pruebe de nuevo.',
 		'117' => 'No se ha encontrado el archivo. Por favor, actualice la lista de archivos y pruebe de nuevo.',

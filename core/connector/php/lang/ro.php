@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Romanian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Extensie fișier invalidă.',
 		'109' => 'Cerere invalidă.',
 		'110' => 'Eroare necunoscută.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Există deja un fișier sau un dosar cu același nume.',
 		'116' => 'Dosar negăsit. Te rog împrospătează și încearcă din nou.',
 		'117' => 'Fișier negăsit. Te rog împrospătează lista de fișiere și încearcă din nou.',

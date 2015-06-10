@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Gujarati language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'ફાઈલ એક્ષટેનસન માન્ય નથી.',
 		'109' => 'ઇનવેલીડ રીક્વેસ્ટ.',
 		'110' => 'અન્નોન એરર.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'એજ નામ વાળું ફાઈલ અથવા ફોલ્ડર છે.',
 		'116' => 'ફોલ્ડર નથી. રીફ્રેશ દબાવી ફરી પ્રયત્ન કરો.',
 		'117' => 'ફાઈલ નથી. રીફ્રેશ દબાવી ફરી પ્રયત્ન કરો..',

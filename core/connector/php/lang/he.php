@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Hebrew language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'סיומת הקובץ לא תקינה.',
 		'109' => 'בקשה לא תקינה.',
 		'110' => 'שגיאה לא ידועה.',
+		'111' => 'לא ניתן היה להשלים את הבקשה בשל הגודל החריג של הקובץ הנוצר.',
 		'115' => 'כבר קיים/ת קובץ או תיקיה באותו השם.',
 		'116' => 'התיקיה לא נמצאה. נא לרענן ולנסות שוב.',
 		'117' => 'הקובץ לא נמצא. נא לרענן ולנסות שוב.',

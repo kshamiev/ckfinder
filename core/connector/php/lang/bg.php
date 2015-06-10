@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Bulgarian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Невалидно файлово разширение.',
 		'109' => 'Невалидна заявка.',
 		'110' => 'Неизвестна грешка.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Файл или папка със същото име вече съществува.',
 		'116' => 'Папката не е намерена, опреснете и опитайте отново.',
 		'117' => 'Файлът не е намерен, опреснете и опитайте отново.',

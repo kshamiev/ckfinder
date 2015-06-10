@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Estonian language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Sobimatu faililaiend.',
 		'109' => 'Vigane päring.',
 		'110' => 'Tundmatu viga.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'Sellenimeline fail või kaust on juba olemas.',
 		'116' => 'Kausta ei leitud. Palun värskenda lehte ja proovi uuesti.',
 		'117' => 'Faili ei leitud. Palun värskenda lehte ja proovi uuesti.',

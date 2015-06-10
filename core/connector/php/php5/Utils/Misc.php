@@ -2,8 +2,8 @@
 /*
 * CKFinder
 * ========
-* http://ckfinder.com
-* Copyright (C) 2007-2012, CKSource - Frederico Knabben. All rights reserved.
+* http://cksource.com/ckfinder
+* Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
 *
 * The software, this file and its contents are subject to the CKFinder
 * License. Please read the license.txt file before using, installing, copying,
@@ -42,6 +42,17 @@ class CKFinder_Connector_Utils_Misc
             $errorMessage = "";
         }
         return $errorMessage;
+    }
+
+    /**
+     * Simulate the encodeURIComponent() function available in JavaScript
+     * @param string $str
+     * @return string
+     */
+    public static function encodeURIComponent($str)
+    {
+        $revert = array('%21'=>'!', '%2A'=>'*', '%27'=>"'", '%28'=>'(', '%29'=>')');
+        return strtr(rawurlencode($str), $revert);
     }
 
     /**
@@ -214,7 +225,7 @@ class CKFinder_Connector_Utils_Misc
         foreach ($haystack as $key => $val) {
             $lcase[$key] = strtolower($val);
         }
-        return in_array($needle, $lcase);
+        return in_array(strtolower($needle), $lcase);
     }
 
     /**

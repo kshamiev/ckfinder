@@ -1,5 +1,5 @@
 <?php
-// Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+// Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
 // For licensing, see LICENSE.html or http://ckfinder.com/license
 
 //  Defines the object for the Swedish language.
@@ -16,6 +16,7 @@ $GLOBALS['CKFLang'] = array (
 		'105' => 'Ogiltig filändelse.',
 		'109' => 'Ogiltig begäran.',
 		'110' => 'Okänt fel.',
+		'111' => 'It was not possible to complete the request due to resulting file size.',
 		'115' => 'En fil eller mapp med aktuellt namn finns redan.',
 		'116' => 'Mappen kunde inte hittas. Var god uppdatera sidan och försök igen.',
 		'117' => 'Filen kunde inte hittas. Var god uppdatera sidan och försök igen.',
