@@ -16,7 +16,7 @@
 require dirname(dirname(__DIR__)) . '/zero/class/App.php';
 Zero_App::Init('ckfinder');
 Zero_App::$Config->Log_Output_Display = false;
-$Users = Base_Users::Factory();
+$Users = Base_Users::Factor();
 
 /**
  * This function must check the user session to be sure that he/she is
