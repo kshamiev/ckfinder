@@ -13,10 +13,10 @@
  */
 
 // Подключение класса Zero_App
-require dirname(dirname(__DIR__)) . '/zero/class/App.php';
+require dirname(dirname(__DIR__)) . '/phpzero/class/Zero/App.php';
 Zero_App::Init('ckfinder');
 Zero_App::$Config->Log_Output_Display = false;
-$Users = Zero_Users::Factor();
+$Users = Zero_Users::Factory();
 
 /**
  * This function must check the user session to be sure that he/she is
